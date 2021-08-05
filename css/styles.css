@@ -58,6 +58,7 @@ ul {
 }
 .footer {
   background: var(--background-color);
+  padding: 60px 15px;
 }
 .title {
   color: var(--text-color);
@@ -70,17 +71,14 @@ ul {
 /* контейнер геометрия*/
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .line {
   border: 1px solid var(--header-line-color);
 }
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding: 94px 0;
 }
 /*логотип*/
 .logo {
@@ -105,8 +103,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 30px 0;
   display: block;
 }
 
@@ -121,12 +118,11 @@ ul {
 .site-nav {
   display: flex;
   flex-direction: row;
-}
-.site-nav .nav-link {
-  margin-left: 50px;
-}
-.site-nav .nav-link:first-child {
   margin-left: 93px;
+}
+
+.site-nav .nav-link:first-child {
+  margin-left: 50px;
 }
 
 /*коннтакты*/
@@ -145,16 +141,11 @@ ul {
   display: flex;
   margin-left: auto;
 }
-.contacts.list .contacts-link {
+.contacts.list .contacts-link:not(:first-child) {
   margin-left: 50px;
 }
-.contacts.list .contacts-link:first-child {
-  margin-left: 0px;
-}
 /*footer*/
-.footer-padding {
-  padding: 60px 15px;
-}
+
 .footer-logo {
   margin-bottom: 20px;
 }
@@ -274,7 +265,6 @@ ul {
 }
 .team.section {
   background: var(--secondary-background-color);
-  padding-top: 0px;
 }
 
 .teammate-name {
@@ -294,9 +284,11 @@ ul {
   padding-top: 10px;
 }
 .text-specialist {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   background-color: var(--whitе-color-text);
+}
+.foto-specialist {
+  border-radius: 0px;
 }
 
 /* портфолио*/
@@ -305,18 +297,12 @@ ul {
   font-size: 0;
 }
 .filter {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter .filter-element {
+.filter .filter-element:not(:first-child) {
   margin-left: 8px;
-}
-.filter .filter-element:first-child {
-  margin-left: 0px;
 }
 
 .secondary-button {
@@ -374,10 +360,11 @@ ul {
 .projects .projects-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 3 -60x);
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .projects-item .projects-text {
   border: 1px solid var(--projects-bgc);
   border-top: none;
+  padding: 20px 24px;
 }
