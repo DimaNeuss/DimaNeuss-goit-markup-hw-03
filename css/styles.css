@@ -191,7 +191,7 @@ ul {
 .primary-button {
   color: var(--whitе-color-text);
   background-color: var(--accent-color);
-  font-family: inherit;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -303,6 +303,7 @@ ul {
 
 .secondary-button {
   color: var(--text-color);
+  font-family: Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
