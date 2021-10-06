@@ -88,6 +88,8 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+}
+.header-logo {
   margin-right: 93px;
 }
 .logo-header {
@@ -142,13 +144,12 @@ ul {
   display: flex;
   margin-left: auto;
 }
-.contacts.list .contacts-link:not(:first-child) {
+.contacts.list .contacts-links:not(:first-child) {
   margin-left: 50px;
 }
 /*footer*/
-
-.footer-logo {
-  margin-bottom: 20px;
+.contacts-footer {
+  margin-top: 20px;
 }
 .contacts-footer-link {
   background: var(--background-color);
@@ -158,8 +159,8 @@ ul {
   line-height: 1.8;
   display: inline-block;
 }
-.contacts-footer-item {
-  margin-top: 9px;
+.contacts-footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-link {
   color: var(--whitе-color-text);
@@ -208,6 +209,10 @@ ul {
 }
 
 /*особенности*/
+.feature {
+  display: flex;
+  justify-content: space-between;
+}
 .features {
   display: flex;
   justify-content: space-between;
@@ -227,7 +232,6 @@ ul {
 }
 
 .features .features-parts {
-  flex-wrap: wrap;
   flex-basis: calc(100% / 3 - 120px);
 }
 .features .features-part:first-child {
@@ -306,7 +310,6 @@ ul {
 
 .secondary-button {
   color: var(--text-color);
-  font-family: Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
